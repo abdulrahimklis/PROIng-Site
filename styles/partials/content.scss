@@ -1,3 +1,71 @@
 .content {
     min-height: 100vh;
+    @include grid();
+    @extend .spacing;
+
+    canvas {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 50px;
+    }
+
+    .slider {
+        grid-area: slider;
+        background: linear-gradient(50deg, white 300px, $main-color 900px, white 90px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Open Sans', sans-serif;
+
+            span, strong {
+                display: block;
+            }
+            span {
+                color: #ffffff;
+                text-shadow: 0 0 0.1em #e2e2e2, 0 0 0.2em #ffffff;
+            }
+            strong {
+                font-size: 2em;
+                letter-spacing: 0.2em;
+                font-weight: 800;
+                margin: 0.25em auto;
+            }
+        }
+
+          
+    }
+
+    .services {
+        grid-area: services;
+        padding: 15px;
+        background: linear-gradient(130deg, white 300px, $main-color 900px, white 90px);
+        @include grid-items(15px, 15px, 3, 2, 1);
+
+        .service {
+            width: 100%;
+            height: 300px;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+    }
+
+    .team {
+        grid-area: team;
+        padding: 15px;
+        background: linear-gradient(50deg, white 300px, $main-color 900px, white 90px);
+        @include grid-items(35px, 35px, 2, 2, 1);
+
+        .member {
+            width: 150px;
+            height: 150px;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            border-radius: 50%;
+        }
+    }
 }

@@ -1,10 +1,15 @@
-@import 'partials/variables';
-@import 'partials/grid';
-@import 'partials/header';
-@import 'partials/content';
-@import 'partials/footer';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+@import 'partials/variables';
+@import 'partials/leafs';
+@import 'partials/mixins';
+@import 'partials/grid';
+@import 'partials/header';
+@import 'partials/content';
+@import 'partials/footer';
