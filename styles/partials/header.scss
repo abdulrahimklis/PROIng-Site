@@ -1,0 +1,26 @@
+header {
+    height: 60px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            width: 60px;
+
+            img {
+                width: 100%;
+            }
+        }
+        ul {
+            list-style: none;
+
+            li {
+                float: left;
+                padding: 15px;
+            }
+        }
+    }
+}

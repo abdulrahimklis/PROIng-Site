@@ -1,0 +1,32 @@
+header {
+  height: 60px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    header nav .logo {
+      width: 60px; }
+      header nav .logo img {
+        width: 100%; }
+    header nav ul {
+      list-style: none; }
+      header nav ul li {
+        float: left;
+        padding: 15px; }
+
+.content {
+  min-height: 100vh; }
+
+footer {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e88262; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=main.css.map */

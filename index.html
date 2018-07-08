@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="msapplication-TileImage" content="images/icons/icon-192x192.png">
+    <meta name="msapplication-TileColor" content="#ff625f">
+    <meta name="theme-color" content="#ff625f"/>
+
+    <link defer rel="manifest" href="manifest.json">
+    <link defer rel="shortcut icon" type="image/png" href="images/icons/icon-192x192.png"/>
+
+    <title>PROIng</title>
+
+    <link defer async rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+
+            <ul>
+                <li>Services</li>
+                <li>About us</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <div class="slider"></div>
+
+        <div class="services">
+            <div class="service"></div>
+            <div class="service"></div>
+            <div class="service"></div>
+        </div>
+        
+        <div class="team"></div>
+    </div>
+
+    <footer>
+        <p>&copy; PROIng - 2018</p>
+    </footer>
+
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function() {
+                  console.log('Service Worker Registered');
+            });
+        }
+    </script>
+    <script defer src="scripts/main.js"></script>
+</body>
+</html>
